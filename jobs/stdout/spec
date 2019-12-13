@@ -1,0 +1,11 @@
+---
+name: stdout
+
+templates:
+  main.sh.erb: main.sh
+
+packages: []
+
+properties:
+  strings:
+    message: default_message
