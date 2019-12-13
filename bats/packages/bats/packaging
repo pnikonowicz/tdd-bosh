@@ -1,0 +1,5 @@
+set -e
+
+cp -a bats/* ${BOSH_INSTALL_TARGET}
+cd ${BOSH_INSTALL_TARGET}
+bash install.sh

@@ -1,0 +1,8 @@
+---
+name: install
+
+templates: {}
+
+packages: [bats]
+
+properties: {}

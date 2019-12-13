@@ -1,0 +1,7 @@
+---
+name: bats
+
+dependencies: []
+
+files: 
+  - '**/*'
