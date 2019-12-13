@@ -1,0 +1,3 @@
+[submodule "bats/src"]
+	path = bats/src
+	url = https://github.com/sstephenson/bats
