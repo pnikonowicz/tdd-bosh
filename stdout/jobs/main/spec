@@ -1,5 +1,5 @@
 ---
-name: stdout
+name: main
 
 templates:
   main.sh.erb: main.sh

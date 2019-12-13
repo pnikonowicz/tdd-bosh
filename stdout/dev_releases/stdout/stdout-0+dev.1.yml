@@ -1,0 +1,10 @@
+name: stdout
+version: 0+dev.1
+commit_hash: 3ecb6fa
+uncommitted_changes: true
+jobs:
+- name: main
+  version: 96848030908ebf94d4258f86e06bc974b6cc3a2613aedd408cda997cffddc71b
+  fingerprint: 96848030908ebf94d4258f86e06bc974b6cc3a2613aedd408cda997cffddc71b
+  sha1: sha256:7ba1c411011eb11573873323b9610d285f93ada37edcae9180ad818195a8bc52
+  packages: []
