@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+packages=/var/vcap/packages
+echo "running ${packages}/install_bats/bin/bats <%= p('test_location') %>"
+${packages}/install_bats/bin/bats <%= p('test_location') %>

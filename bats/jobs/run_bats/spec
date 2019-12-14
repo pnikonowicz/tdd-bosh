@@ -1,0 +1,11 @@
+---
+name: run_bats
+
+templates:
+  run.erb: bin/run
+
+packages: [install_bats]
+
+properties: 
+  test_location: 
+    

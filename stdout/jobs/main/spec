@@ -4,7 +4,7 @@ name: main
 templates:
   main.sh.erb: main.sh
 
-packages: []
+packages: [bats]
 
 properties:
   strings:

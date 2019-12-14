@@ -1,10 +1,17 @@
 name: bats
 version: 0+dev.1
-commit_hash: 7b6607b
+commit_hash: d46ef24
 uncommitted_changes: true
+jobs:
+- name: run_bats
+  version: 9a9724b6ea9222c298f94de826a79227aa5f4acbf6bf282f1a8ef0d9a303d619
+  fingerprint: 9a9724b6ea9222c298f94de826a79227aa5f4acbf6bf282f1a8ef0d9a303d619
+  sha1: sha256:49e6ce886465537ad0e35df908722358a4f48f593bfe4de076e187ebaeee5ee3
+  packages:
+  - install_bats
 packages:
-- name: bats
-  version: 824682979e4152bd68024824892b998f3b84969ff63a48cd434af4017f55dcb5
-  fingerprint: 824682979e4152bd68024824892b998f3b84969ff63a48cd434af4017f55dcb5
-  sha1: sha256:21662bff66893cdb762e2188bca9e245b81c9841cfd14c1de5ede1febd632949
+- name: install_bats
+  version: e57615734c6130604e21c994e15f402b147e3246d2f7e10459fc1a81b444edb9
+  fingerprint: e57615734c6130604e21c994e15f402b147e3246d2f7e10459fc1a81b444edb9
+  sha1: sha256:51475f5cb484218148cde229990cb47744082e9418c580396a98ef29369aa69c
   dependencies: []

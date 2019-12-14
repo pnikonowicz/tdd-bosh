@@ -1,2 +1,2 @@
-*/dev_releases/
-*/**/.dev_builds/
+dev_releases/
+.dev_builds/

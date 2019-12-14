@@ -34,8 +34,9 @@ instance_groups:
         properties: 
           strings:
             message: we are inside
-      - name: install
+      - name: run_bats
         release: bats
-      - name: bats
-        release: stdout
+        properties:
+          test_location: '/var/vcap/packages/bats/main_test.sh'
+      
       
