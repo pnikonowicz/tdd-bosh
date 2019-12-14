@@ -1,6 +1,7 @@
 #!/usr/bin/env bats
 
 @test "writes to stdout" {
-  result="$(bash /var/vcap/jobs/main/main.sh)"
-  [ "$result" == "we are inside" ]
+  run bash /var/vcap/jobs/main/main.sh
+  [ "$status" -eq 0 ]
+  [ "$output" == "we are inside" ]
 }
