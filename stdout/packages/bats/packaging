@@ -1,0 +1,3 @@
+set -ex
+
+cp -a bats/* ${BOSH_INSTALL_TARGET}

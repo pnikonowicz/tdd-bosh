@@ -4,7 +4,7 @@ require 'yaml' # todo fix bosh-template
 require 'bosh/template/test'
 
 describe 'stdout' do
-    let(:release) { Bosh::Template::Test::ReleaseDir.new(File.join(File.dirname(__FILE__), '..')) }
+    let(:release) { Bosh::Template::Test::ReleaseDir.new(File.join(File.dirname(__FILE__), '../..')) }
     let(:job) { release.job('stdout') }
     let(:template) { job.template('main.sh') }
     

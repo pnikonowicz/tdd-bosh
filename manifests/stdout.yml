@@ -36,4 +36,6 @@ instance_groups:
             message: we are inside
       - name: install
         release: bats
+      - name: bats
+        release: stdout
       

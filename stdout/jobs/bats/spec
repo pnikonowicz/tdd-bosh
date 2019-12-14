@@ -1,0 +1,9 @@
+---
+name: bats
+
+templates: 
+  run.erb: bin/run
+
+packages: [bats]
+
+properties: {}

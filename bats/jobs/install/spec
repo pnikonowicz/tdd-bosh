@@ -3,6 +3,6 @@ name: install
 
 templates: {}
 
-packages: [bats]
+packages: [install_bats]
 
 properties: {}

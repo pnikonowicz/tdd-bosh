@@ -1,5 +1,5 @@
 ---
-name: bats
+name: install_bats
 
 dependencies: []
 
