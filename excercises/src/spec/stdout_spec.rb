@@ -6,7 +6,7 @@ require 'bosh/template/test'
 describe 'stdout' do
     let(:release) { Bosh::Template::Test::ReleaseDir.new(File.join(File.dirname(__FILE__), '../..')) }
     let(:job) { release.job('main') }
-    let(:template) { job.template('main.sh') }
+    let(:template) { job.template('stdout.sh') }
     
     it 'writes to property to stdout' do
         message = 'hi'

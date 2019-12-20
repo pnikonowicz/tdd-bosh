@@ -4,4 +4,5 @@ name: bats
 dependencies: []
 
 files: 
-  - bats/main_test.sh
+  - bats/simple.bats
+  - bats/mock.bats

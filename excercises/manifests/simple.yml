@@ -1,12 +1,10 @@
 ---
-name: excercises
+name: simple
 
 releases:
   - name: excercises
     version: latest
   - name: bats
-    version: latest
-  - name: bash_shell_mock
     version: latest
 
 update:
@@ -21,7 +19,7 @@ stemcells:
     version: latest
 
 instance_groups:
-  - name: excercises
+  - name: simple
     azs: [z1, z2, z3]
     instances: 1
     vm_type: default
@@ -39,11 +37,7 @@ instance_groups:
       - name: run_bats
         release: bats
         properties:
-          test_location: 'main_test.sh'
-          working_directory: '/var/vcap/packages/bats/'
-      - name: install_bash_shell_mock
-        release: bash_shell_mock
-        properties:
-          install_location: '/var/vcap/packages/bats/'
-      
-      
+          test_location: '/var/vcap/packages/bats/simple.bats'
+          working_directory: '/var/vcap/jobs/main/'
+          
+            

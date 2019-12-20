@@ -2,7 +2,7 @@
 name: main
 
 templates:
-  main.sh.erb: main.sh
+  stdout.sh.erb: stdout.sh
 
 packages: [bats]
 
