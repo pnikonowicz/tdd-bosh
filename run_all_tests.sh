@@ -9,16 +9,16 @@ function main() {
 
 function unit_tests() {
     print_green "running unit tests"
-    pushd ./stdout/src/spec
+    pushd ./excercises/src/spec
         bundle exec rspec .
     popd
 }
 
 function integration_tests() {
     print_green "running integration tests"
-    pushd ./manifests
-    bosh -e vbox deploy stdout.yml -d stdout -n \
-        && bosh -d stdout run-errand run_bats
+    pushd ./excercises/manifests
+    bosh -e vbox deploy excercises.yml -d excercises -n \
+        && bosh -d excercises run-errand run_bats
     popd
 }
 

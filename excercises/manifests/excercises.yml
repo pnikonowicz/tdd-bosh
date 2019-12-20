@@ -1,8 +1,8 @@
 ---
-name: stdout
+name: excercises
 
 releases:
-  - name: stdout
+  - name: excercises
     version: latest
   - name: bats
     version: latest
@@ -21,7 +21,7 @@ stemcells:
     version: latest
 
 instance_groups:
-  - name: stdout
+  - name: excercises
     azs: [z1, z2, z3]
     instances: 1
     vm_type: default
@@ -31,7 +31,7 @@ instance_groups:
       - name: default
     jobs:
       - name: main
-        release: stdout
+        release: excercises
         provides: {}
         properties: 
           strings:
