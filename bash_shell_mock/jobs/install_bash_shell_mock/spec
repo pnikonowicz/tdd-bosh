@@ -1,0 +1,10 @@
+---
+name: install_bash_shell_mock
+
+templates:
+  install.erb: bin/post-start
+
+packages: [install_bash_shell_mock]
+
+properties: 
+  install_location:

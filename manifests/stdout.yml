@@ -6,6 +6,8 @@ releases:
     version: latest
   - name: bats
     version: latest
+  - name: bash_shell_mock
+    version: latest
 
 update:
   canaries: 2
@@ -38,5 +40,9 @@ instance_groups:
         release: bats
         properties:
           test_location: '/var/vcap/packages/bats/main_test.sh'
+      - name: install_bash_shell_mock
+        release: bash_shell_mock
+        properties:
+          install_location: '/var/vcap/packages/bats/mock/'
       
       

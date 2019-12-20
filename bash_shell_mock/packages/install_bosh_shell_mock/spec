@@ -1,0 +1,7 @@
+---
+name: install_bash_shell_mock
+
+dependencies: []
+
+files: 
+  - '**/*'

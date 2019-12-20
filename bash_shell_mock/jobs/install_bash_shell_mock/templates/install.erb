@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+
+packages='/var/vcap/packages'
+destination=<%= p('install_location') %>
+
+if [ -z "${destination}" ]; then
+    echo "install location not set. skipping"
+else
+    source=${packages}/install_bash_shell_mock
+    echo "moving package from ${source} to ${destination}"
+    mkdir -p ${destination} \
+        && cp -r ${source}/* ${destination}
+fi
+
+echo "done with install"
