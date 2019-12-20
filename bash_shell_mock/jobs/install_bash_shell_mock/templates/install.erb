@@ -10,7 +10,7 @@ else
     source=${packages}/install_bash_shell_mock
     echo "moving package from ${source} to ${destination}"
     mkdir -p ${destination} \
-        && cp -r ${source}/* ${destination}
+        && cp -r ${source}/bin/* ${destination}/
 fi
 
 echo "done with install"

@@ -7,4 +7,6 @@ templates:
 packages: [install_bash_shell_mock]
 
 properties: 
-  install_location:
+  install_location: 
+    required: true
+    description: the location of your tests

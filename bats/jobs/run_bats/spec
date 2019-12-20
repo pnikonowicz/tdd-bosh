@@ -7,5 +7,10 @@ templates:
 packages: [install_bats]
 
 properties: 
-  test_location: 
+  test_location:
+    required: true
+    description: the location of your test relative to the working directory
+  working_directory:
+    default: '.'
+    description: where the test should run from
     

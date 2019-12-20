@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+working_directory=<%= p('working_directory') %>
+echo "changing working directory to ${working_directory}"
+cd ${working_directory}
+
 packages=/var/vcap/packages
 echo "running ${packages}/install_bats/bin/bats <%= p('test_location') %>"
 ${packages}/install_bats/bin/bats <%= p('test_location') %>

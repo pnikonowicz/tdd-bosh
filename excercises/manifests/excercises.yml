@@ -39,10 +39,11 @@ instance_groups:
       - name: run_bats
         release: bats
         properties:
-          test_location: '/var/vcap/packages/bats/main_test.sh'
+          test_location: 'main_test.sh'
+          working_directory: '/var/vcap/packages/bats/'
       - name: install_bash_shell_mock
         release: bash_shell_mock
         properties:
-          install_location: '/var/vcap/packages/bats/mock/'
+          install_location: '/var/vcap/packages/bats/'
       
       
