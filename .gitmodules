@@ -1,6 +1,6 @@
 [submodule "bats/src"]
 	path = bats/src
 	url = https://github.com/sstephenson/bats
-[submodule "bosh_shell_mock/src"]
-	path = bosh_shell_mock/src
+[submodule "bash_shell_mock/src"]
+	path = bash_shell_mock/src
 	url = git@github.com:capitalone/bash_shell_mock.git
