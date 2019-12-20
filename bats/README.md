@@ -4,6 +4,7 @@ this is a bosh release for https://github.com/sstephenson/bats.
 
 # Properties
 *test_location*: the file that is your test
+
 *working_directory*: the location that bats should run from
 
 example manifest from https://github.com/pnikonowicz/tdd-bosh:
