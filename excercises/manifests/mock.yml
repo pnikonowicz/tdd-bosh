@@ -6,6 +6,8 @@ releases:
     version: latest
   - name: bash_shell_mock
     version: latest
+  - name: excercises
+    version: latest
 
 update:
   canaries: 2
@@ -28,14 +30,20 @@ instance_groups:
     networks:
       - name: default
     jobs:
+      - name: main
+        release: excercises
+        provides: {}
+        properties: 
+          strings:
+            message: we are inside
       - name: run_bats
         release: bats
         properties:
-          test_location: 'sample.bats'
-          working_directory: '/var/vcap/packages/install_bash_shell_mock/sample-bats/'
+          test_location: '/var/vcap/packages/bats/mock.bats'
+          working_directory: '/var/vcap/jobs/main/'
       - name: install_bash_shell_mock
         release: bash_shell_mock
         properties:
-          install_location: '/var/vcap/packages/install_bash_shell_mock/sample-bats/'
+          install_location: '/var/vcap/jobs/main/'
       
       
