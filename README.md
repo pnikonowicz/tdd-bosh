@@ -1,3 +1,13 @@
+# structure
+## bats
+bats release (https://github.com/sstephenson/bats)
+
+## bash_shell_mock
+bash_shell_mock release (https://github.com/capitalone/bash_shell_mock)
+
+## excercises
+a test release that can show how to tdd a bosh release
+
 # run all tests
 
 
