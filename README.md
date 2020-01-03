@@ -1,4 +1,4 @@
-# tdd-bosh
+# run all tests
 
 
 Upload bats release:
