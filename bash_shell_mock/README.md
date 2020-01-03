@@ -1,4 +1,4 @@
-this is a bosh release for https://github.com/capitalone/bash_shell_mock/tree/54b16cb7efd42ed90e8388852db198b66e5c46a7
+this is a bosh release for https://github.com/capitalone/bash_shell_mock
 
 # Properties
 ```
