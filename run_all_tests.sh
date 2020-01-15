@@ -17,9 +17,12 @@ function unit_tests() {
 function integration_tests() {
     print_green "running integration tests"
     pushd ./excercises/manifests
+    
+    print_green "running simple bats"
     bosh -e vbox deploy simple.yml -d simple -n \
         && bosh -d simple run-errand run_bats
 
+    print_green "running mock bats"
     bosh -e vbox deploy mock.yml -d mock -n \
         && bosh -d mock run-errand run_bats
     popd
